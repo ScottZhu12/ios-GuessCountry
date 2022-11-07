@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NRL-Dx-mlf">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -14,11 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86e-GB-fHd">
-                                <rect key="frame" x="95" y="100" width="200" height="100"/>
+                                <rect key="frame" x="87.666666666666686" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="86e-GB-fHd" secondAttribute="height" multiplier="2:1" id="C1C-OM-9Ed"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -26,7 +29,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJr-su-9yS">
-                                <rect key="frame" x="95" y="230" width="200" height="100"/>
+                                <rect key="frame" x="87.666666666666686" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gJr-su-9yS" secondAttribute="height" multiplier="2:1" id="axZ-VW-vR8"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -34,7 +40,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-KQ-Z61">
-                                <rect key="frame" x="95" y="360" width="200" height="100"/>
+                                <rect key="frame" x="87.666666666666686" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zso-KQ-Z61" secondAttribute="height" multiplier="2:1" id="V39-HB-CI4"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -49,8 +58,11 @@
                             <constraint firstItem="gJr-su-9yS" firstAttribute="centerX" secondItem="86e-GB-fHd" secondAttribute="centerX" id="6Ml-Qv-cbb"/>
                             <constraint firstItem="86e-GB-fHd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Ud-Aa-JAa"/>
                             <constraint firstItem="86e-GB-fHd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="L3k-1t-dqj"/>
+                            <constraint firstItem="Zso-KQ-Z61" firstAttribute="height" secondItem="gJr-su-9yS" secondAttribute="height" id="OMt-zU-gDq"/>
+                            <constraint firstItem="gJr-su-9yS" firstAttribute="height" secondItem="86e-GB-fHd" secondAttribute="height" id="aQO-rz-O3w"/>
                             <constraint firstItem="Zso-KQ-Z61" firstAttribute="top" secondItem="gJr-su-9yS" secondAttribute="bottom" constant="30" id="b93-mJ-PUp"/>
                             <constraint firstItem="Zso-KQ-Z61" firstAttribute="centerX" secondItem="gJr-su-9yS" secondAttribute="centerX" id="hhN-up-K3T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zso-KQ-Z61" secondAttribute="bottom" constant="20" id="oQt-4Y-H2S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MWz-el-Ndm"/>
@@ -70,7 +82,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NRL-Dx-mlf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jqK-jX-shQ">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
